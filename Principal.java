@@ -9,7 +9,7 @@ public class Principal {
             try{
                 op = Integer.parseInt(JOptionPane.showInputDialog(menu));
                     switch (op){
-                        case 1:{
+                        case 1:{ 
                             String nome = JOptionPane.showInputDialog("Digite o nome");
                             String fone = JOptionPane.showInputDialog("Digite o fone");
                             String email = JOptionPane.showInputDialog("Digite o e-mail");
@@ -19,10 +19,11 @@ public class Principal {
                             break;
                         }
                         case 2:{
+                            int codigo = JOptionPane.showMessageDialog(null, Pessoa.listar(JOptionPane.showInputDialog())
                             String nome = JOptionPane.showInputDialog("Digite o nome");
                             String fone = JOptionPane.showInputDialog("Digite o fone");
                             String email = JOptionPane.showInputDialog("Digite o e-mail");
-                            int codigo = parseInt(JOptionPane.showInputDialog("Digite o código"));
+                            
                             Pessoa p = new Pessoa(codigo, nome, fone, email);
                             p.atualizar();
                             JOptionPane.showMessageDialog(null, "Pessoa atualizada");

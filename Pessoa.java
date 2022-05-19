@@ -93,6 +93,14 @@ public class Pessoa {
         }
     }
 
+    public void listagem_minima_código(){
+        System.out.printf(
+                    "código: %d, nome: %s, fone: %s, e-mail: %s\n",
+                    codigo, nome, fone, email
+                );
+        
+    }
+
     public Pessoa (String nome, String fone, String email){
         this(0, nome, fone, email);    
     }
